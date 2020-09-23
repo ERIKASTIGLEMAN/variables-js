@@ -14,8 +14,8 @@ const secondOperand = parseFloat(
   window.prompt(`Please give me two numbers, what is your second number?`)
 )
 
-const sum = secondOperand + firstOperand
-console.log(sum)
+const sumNumber = secondOperand + firstOperand
+console.log(sumNumber)
 const difference = secondOperand - firstOperand
 console.log(difference)
 const product = secondOperand * firstOperand
@@ -128,15 +128,28 @@ const numbers = [
   43,
 ]
 let min = numbers[0]
-for (let i = 0; i <= numbers.length; i++)
-{if (numbers[i]< min) min = numbers[1];}
+let max = numbers[0]
+let sumOfNumber = numbers[0]
+let averageOfNumber = numbers[0]
+
+for (let i = 0; i <= numbers.length; i++) {
+  if (numbers[i] < min) min = numbers[i]
+}
 console.log(min)
 
-// let max = null
-for (let i = 0; i <= numbers.length; i++)
+for (let i = 0; i <= numbers.length; i++) {
+  if (numbers[i] > max) max = numbers[i]
+}
+console.log(max)
 
-// let sum = null
-for (let i = 0; i <= numbers.length; i++)
+// let sum = numbers[0]
+for (let i = 0; (i = numbers.length); i++) {
+  if (numbers[i] < sumOfNumber) sumOfNumber = numbers[1]
+}
+console.log(sumNumber)
 
-// let average = null
-for (let i = 0; i <= numbers.length; i++)
+// let average = numbers[0]
+for (let i = 0; (i = numbers.length); i++) {
+  if (numbers[i] < averageOfNumber) averageOfNumber = numbers[1]
+}
+console.log(averageOfNumber)
