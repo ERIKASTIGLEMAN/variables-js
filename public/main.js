@@ -149,4 +149,4 @@ for (let i = 0; (i = numbers.length); i++) {
 console.log(newSum)
 
 // let average = numbers[0]
-average = newSum / numbers
+average = newSum / numbers.length
