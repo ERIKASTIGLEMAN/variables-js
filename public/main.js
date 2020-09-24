@@ -129,27 +129,24 @@ const numbers = [
 ]
 let min = numbers[0]
 let max = numbers[0]
-let sumOfNumber = numbers[0]
-let averageOfNumber = numbers[0]
+let sum = 0
+let average = sum / numbers.length
 
-for (let i = 0; i <= numbers.length; i++) {
+for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] < min) min = numbers[i]
 }
 console.log(min)
 
-for (let i = 0; i <= numbers.length; i++) {
+for (let i = 0; i < numbers.length; i++) {
   if (numbers[i] > max) max = numbers[i]
 }
 console.log(max)
 
-// let sum = numbers[0]
+let newSum = 0
 for (let i = 0; (i = numbers.length); i++) {
-  if (numbers[i] < sumOfNumber) sumOfNumber = numbers[1]
+  newSum = newSum + 1
 }
-console.log(sumNumber)
+console.log(newSum)
 
 // let average = numbers[0]
-for (let i = 0; (i = numbers.length); i++) {
-  if (numbers[i] < averageOfNumber) averageOfNumber = numbers[1]
-}
-console.log(averageOfNumber)
+average = newSum / numbers
